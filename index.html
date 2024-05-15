@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Xyris Plugins</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./css/coloring.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/txtformatting.css">
+    <link rel="stylesheet" type="text/css" href="./css/shadow.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            transition: background-color 0.5s, color 0.5s;
+            color: #000;
+            background-image: url('bg.svg');
+            background-repeat: repeat-y, repeat-y;
+            background-position: left, right;
+            background-size: auto;
+            -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+
+        }
+
+        .jumbotron {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+        }
+
+        .jumbotron-items {
+            text-align: center;
+        }
+
+        .jumbotron-buttons {
+            margin-top: 20px;
+        }
+        body.light-mode {
+            background-color: #ffffff;
+        }
+        body.light-mode a,
+        body.light-mode p,
+        body.light-mode button {
+            color: #000;
+        }
+
+        body.light-mode .jumbotron-t {
+            scale: 1.0;
+            color: linear-gradient(90deg, #7d22cc, #f25eff);
+        }
+
+        body.light-mode .jumbotron-d {
+            color: #000;
+        }
+
+        body.light-mode .fa-sun {
+            color: #000;
+        }
+
+        body.light-mode .navs-item a {
+            color: #000;
+        }
+
+        .navbar-brand-txt {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer {
+      position: fixed;
+      bottom: 0px; /* Adjust distance from bottom */
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center content horizontally */
+      color: #464646;
+    }
+
+    .footer-text {
+      margin-bottom: 10px; /* Spacing between text and icons */
+	  bottom: 40px;
+	  color: #797979;
+    }
+
+    .footer-icons {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  margin-bottom: 10px; /* Add space between icons and text */
+}
+
+.footer-icons .icon {
+  margin: 0 10px; /* Adjust the spacing between icons */
+}
+.footer-icons .icon:hover i {
+  color: #453f4b;
+}
+.footer-icons .icon i {
+  font-size: 24px; /* Adjust the size of the icons */
+  color: #797979; /* Set the default color to black */
+}
+
+
+        .navbar-brand-txt img {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            left: 15px;
+            margin-right: 0px;
+        }
+
+        .dark-light-mode-btn {
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 24px;
+            margin-left: 10px;
+        }
+
+        .nex-image {
+            width: 300px;
+            height: 300px;
+            height: auto;
+        }
+
+        .xp1 {
+            font-weight: bold;
+            background: linear-gradient(90deg, #7d22cc, #f25eff);
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline;
+            white-space: nowrap;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="navbar">
+            <div class="container">
+                <div class="navbar-nav">
+                    <div class="navbar-brand">
+                        <span class="navbar-brand-txt">
+                            <img src="logo.png" alt="xyris">
+                            <a class="txt-bold type-1" href="/">XyrisPlugins</a>
+                            <i class="fas fa-moon dark-light-mode-btn" id="moon-icon" onclick="toggleMode()"></i>
+                        </span>
+                    </div>
+
+                    <span class="navbar-toggler" id="toggler"><i onclick="toggleNavbar(this)" class="fas fa-bars"></i></span>
+
+                    <div class="navs" id="navs">
+                        <div class="navs-item notbtn"><a href="https://builtbybit.com/creators/darkxx-14.484119/" class="txt-uppercase">Products</a></div>
+                        <div class="navs-item notbtn"><a href="https://xyris.fun/devs" class="txt-uppercase">Support</a></div>
+                        <div class="navs-item notbtn"><a href="https://xyris.fun/wiki/" class="txt-uppercase">Wiki</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="container">
+                <div class="jumbotron-items">
+                    <div class="jumbotron-item">
+                        <span class="jumbotron-t xp1">Why Xyris Plugins?</span>
+                        <p id="dynamic-text" class="jumbotron-d typing-animation">At Xyris Plugins, we offer various Minecraft services such as custom plugin development, server development, premade setups, Skript writing, Minecraft building,
+                             and we're highly experienced with FFA/PvP servers. All of our services are highly optimized and are of high quality.
+                              Most of our plugins are tailored for PvP servers and are incredibly useful for them. 
+                             We will be expanding our services soon.</p>
+                        <div class="jumbotron-buttons">
+                            <button class="btn blue" onclick="location.href='https://builtbybit.com/creators/darkxx-14.484119/'">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer">
+        <div class="footer-icons">
+          <a href="https://xyris.fun/devs" target="_blank" class="icon discord-icon">
+            <i class="fab fa-discord"></i>
+          </a>
+          <a href="https://builtbybit.com/creators/darkxx-14.484119/" target="_blank" class="icon store-icon">
+            <i class="fas fa-store"></i>
+          </a>
+        </div>
+        <p class="footer-text">&copy; 2024 Xyris. All Rights Reserved</p>
+      </div>
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            const moonIcon = document.getElementById('moon-icon');
+
+            
+
+            if (body.classList.contains('light-mode')) {
+                body.classList.remove('light-mode');
+                moonIcon.classList.remove('fa-sun');
+                moonIcon.classList.add('fa-moon');
+            } else {
+                body.classList.add('light-mode');
+                moonIcon.classList.remove('fa-moon');
+                moonIcon.classList.add('fa-sun');
+            }
+        }
+    </script>
+</body>
+</html>
