@@ -1,0 +1,22 @@
+:root {
+
+	--primary: #0e0e0e;
+	--primary-disabled: #0e0e0e;
+	/*
+	* this is srgb(19, 19, 19)y color, applied on:
+	* text, border
+	*/
+	--secondary: white;
+	--secondary-disabled: #ababab;
+	/*
+	* this is third color, applied on:
+	* button, 
+	*/
+	--third: #822ba5;
+	--third-disabled: #dd51d1;
+	/*
+	* other colors, used on random object.
+	*/
+	--o1: #7b1ca0;
+	--o1-disabled: #dd51d1;
+}
