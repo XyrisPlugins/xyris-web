@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XyrisPlugins | FFA</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #282c34;
+        color: #abb2bf;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .container {
+        max-width: 90%;
+        width: 100%;
+        margin: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    pre {
+        background-color: #1e1e1e;
+        padding: 20px;
+        border-radius: 8px;
+        overflow-x: auto;
+        margin: 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <pre><code class="language-yaml">
+# Ensure commands don't include "/", for example:
+# - Incorrect: right-click-command: /editkits
+# - Correct: right-click-command: editkits
+
+items:
+  stats:
+    item: 'PAPER'
+    name: '&bStats'
+    slot: 0
+    hide-attributes: true
+    right-click-command: stats
+  leaderboard:
+    item: 'NETHER_STAR'
+    name: '&bLeaderboards'
+    slot: 4
+    hide-attributes: true
+    right-click-command: leaderboards
+  settings:
+    item: 'COMPASS'
+    name: '&bSettings'
+    slot: 8
+    hide-attributes: true
+    right-click-command: settings
+</code></pre>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-yaml.min.js"></script>
+
+</body>
+</html>
