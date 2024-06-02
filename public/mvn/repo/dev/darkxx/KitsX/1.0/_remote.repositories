@@ -1,6 +1,4 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
 #Sun Jun 02 08:56:34 IST 2024
-KitsX-1.0.jar>=
-KitsX-1.0.jar>xyris-plugins=
-KitsX-1.0.pom>=
-KitsX-1.0.pom>xyris-plugins=
+KitsX-1.0.0.jar>=
+KitsX-1.0.0.jar>xyris-plugins=
