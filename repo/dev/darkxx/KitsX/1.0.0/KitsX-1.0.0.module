@@ -1,0 +1,129 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dev.darkxx",
+    "module": "KitsX",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 19,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "KitsX-1.0.0.jar",
+          "url": "KitsX-1.0.0.jar",
+          "size": 86921,
+          "sha512": "0ff964f0146c29cb946ca410feae194d3a64b6894f0c0f3c4a703b8e68d457154e91999557366e6f38d7cd63dce4d13c1b184ad83cb83d7b37dff20bddcbe9e1",
+          "sha256": "a721bbbf762a3bf3e2fa49e85694875ac4710e1031d1d91e0e2c7f9f852047f2",
+          "sha1": "f74d1d7031c4df962a3ac6a0503958b6aa0d1dc1",
+          "md5": "49f60284182ddd53c4df3fe0b6980397"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 19,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "dev.darkxx",
+          "module": "xUtils",
+          "version": {
+            "requires": "2.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "KitsX-1.0.0.jar",
+          "url": "KitsX-1.0.0.jar",
+          "size": 86921,
+          "sha512": "0ff964f0146c29cb946ca410feae194d3a64b6894f0c0f3c4a703b8e68d457154e91999557366e6f38d7cd63dce4d13c1b184ad83cb83d7b37dff20bddcbe9e1",
+          "sha256": "a721bbbf762a3bf3e2fa49e85694875ac4710e1031d1d91e0e2c7f9f852047f2",
+          "sha1": "f74d1d7031c4df962a3ac6a0503958b6aa0d1dc1",
+          "md5": "49f60284182ddd53c4df3fe0b6980397"
+        }
+      ]
+    },
+    {
+      "name": "shadowRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "shadowed",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "KitsX-1.0.0-all.jar",
+          "url": "KitsX-1.0.0-all.jar",
+          "size": 509002,
+          "sha512": "a1b974533198968beee1609ebdd2cd111b6ff83003f110d91f10891c5486fa8fa317c75970b626d995c86b09f5c064a2c8b95644f16616f15c2301ed9322594a",
+          "sha256": "713d55c39795f93d95beff47bdf39c40a0b88661da06a0b42d8bfc7d6121bddd",
+          "sha1": "426b8b2d7e64fafc8dd6f3d1d0475aea5e2e8775",
+          "md5": "004b050a8d5a89f60f21f360dc082d8a"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "KitsX-1.0.0-javadoc.jar",
+          "url": "KitsX-1.0.0-javadoc.jar",
+          "size": 247284,
+          "sha512": "3d895dc2fa0c744d031132d2fbf6a39af06b95fb6722dea5388085fb43e1fd97b2c1a0697dea8a64c6d7101140b4fb77d3af3da6e8c97d97c8fa031b5bf1e375",
+          "sha256": "9f71c02b66c4fb68096972ae467c6f14951070452c0d53492f8942af240c7f60",
+          "sha1": "929078a820f70e1b4712ffa5d8a5e12e7a58bc87",
+          "md5": "410a2ee2a5091948abfe1bda6a55abef"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "KitsX-1.0.0-sources.jar",
+          "url": "KitsX-1.0.0-sources.jar",
+          "size": 55265,
+          "sha512": "19d081f18b760ebe0b375cffb7c1779df80879d3f45bd3a25ff5e2d64fa1d2e28791ecbfb2ca952f097047ca498a8b12926321d38002a423e617cc180da1d80b",
+          "sha256": "accb0e5d13d584a68d4df70669739e58dbad5b49ff62fc853ee1a30322cef24f",
+          "sha1": "deb67674366ea76f7f7b3881300015a41343eedd",
+          "md5": "11f2f5638142d57e1ae8f3006d39be4a"
+        }
+      ]
+    }
+  ]
+}
