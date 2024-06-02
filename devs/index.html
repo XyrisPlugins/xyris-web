@@ -24,7 +24,7 @@
             align-items: center;
             background-color: #111111;
             color: #ffffff;
-            background-image: url('bg.svg');
+            background-image: url('../bg.svg');
             background-repeat: repeat-y;
             background-position: left;
             background-size: auto;
@@ -68,10 +68,17 @@
     <div class="jumbotron">
         <div class="container">
             <div class="jumbotron-item">
-                <span class="jumbotron-t">404</span>
-                <p class="jumbotron-d typing-animation">Page not found.</p>
+                <span class="jumbotron-t">Warning</span>
+                <p class="jumbotron-d typing-animation">You are being redirected...</p>
             </div>
         </div>
     </div>
+
+    <!-- JavaScript for redirection -->
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://discord.gg/tq6fYdBDuX"; // Replace "https://example.com" with the desired URL
+        }, 3000);
+    </script>
 </body>
 </html>
