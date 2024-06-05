@@ -1,0 +1,89 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dev.darkxx",
+    "module": "KitsX",
+    "version": "1.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "KitsX-1.0.1.jar",
+          "url": "KitsX-1.0.1.jar",
+          "size": 87512,
+          "sha512": "38bcfc4e9546c0b3fc96653e1284d1b1601d26f32cd02d47e0fc258197fee4765696c60f6117a34117a8163c142cebeba324c8e76dbcf76cf3bd9053cdd5573f",
+          "sha256": "67e67cd1259ee94067616939095e78ea709fa6ab613f56e599e7b61aca958fbd",
+          "sha1": "6cbe085109b5758fa2223e5c9b60b136f7b2d1b0",
+          "md5": "c87f89bc8585a64711ddf8680a90bc01"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "dev.darkxx",
+          "module": "xUtils",
+          "version": {
+            "requires": "2.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "KitsX-1.0.1.jar",
+          "url": "KitsX-1.0.1.jar",
+          "size": 87512,
+          "sha512": "38bcfc4e9546c0b3fc96653e1284d1b1601d26f32cd02d47e0fc258197fee4765696c60f6117a34117a8163c142cebeba324c8e76dbcf76cf3bd9053cdd5573f",
+          "sha256": "67e67cd1259ee94067616939095e78ea709fa6ab613f56e599e7b61aca958fbd",
+          "sha1": "6cbe085109b5758fa2223e5c9b60b136f7b2d1b0",
+          "md5": "c87f89bc8585a64711ddf8680a90bc01"
+        }
+      ]
+    },
+    {
+      "name": "shadowRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "shadowed",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "KitsX-1.0.1-all.jar",
+          "url": "KitsX-1.0.1-all.jar",
+          "size": 511969,
+          "sha512": "071f07dffc4b467f81d456c9cf3bab8ec7521fabc3f78b78bbe950858f7b99c3f396f3a31f627f02c14fd9a8bcc9b3a945e341136dc13bc82172aeef304dca87",
+          "sha256": "81d4279d2b2dd93305448b7bb6dea6f23518e1fd8ac5617cbbf60fda95c983fa",
+          "sha1": "24a12a2c5984976d0b02ca54fcf24cd3321b61bf",
+          "md5": "22e9298dfba4c7b418ebc8698fd2cccf"
+        }
+      ]
+    }
+  ]
+}
