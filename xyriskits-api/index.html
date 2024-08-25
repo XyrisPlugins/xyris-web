@@ -21,7 +21,7 @@
             align-items: center;
             background-color: #111111;
             color: #ffffff;
-            background-image: url('bg.svg');
+            background-image: url('../bg.svg');
             background-repeat: repeat-y;
             background-position: left;
             background-size: auto;
@@ -65,10 +65,16 @@
     <div class="jumbotron">
         <div class="container">
             <div class="jumbotron-item">
-                <span class="jumbotron-t">404</span>
-                <p class="jumbotron-d typing-animation">Page not found.</p>
+                <span class="jumbotron-t">Warning</span>
+                <p class="jumbotron-d typing-animation">You are being redirected...</p>
             </div>
         </div>
     </div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://gist.github.com/Darkxx14/2098869ad4bf320f077a98839b41d1b3";
+        }, 3000);
+    </script>
 </body>
 </html>
